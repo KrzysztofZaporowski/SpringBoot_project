@@ -176,3 +176,5 @@ public class EquationController {
     }
 }
 ```
+# Summary
+This is my first project in SpringBoot so there could be som begginnig mistakes, for example history for simple calc is not preety printed, but I want to make new better project soon
