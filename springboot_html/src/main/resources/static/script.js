@@ -97,3 +97,21 @@ function sendEquation() {
             console.error('Błąd:', error);
         });
 }
+
+function fetchHistory() {
+    fetch("/history")
+        .then(response => response.json())
+        .then(data => {
+            const historyContainer = document.getElementById("history");
+            historyContainer.innerText = '';
+
+            data.forEach(entry => {
+                const item = document.createElement('li');
+                item.textContent = `${entry.key} = ${entry.value}`;
+                historyContainer.appendChild(item);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching history:', error);
+        });
+}
