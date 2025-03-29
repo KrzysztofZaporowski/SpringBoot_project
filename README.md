@@ -130,8 +130,8 @@ function sendEquation() {
 }
 ```
 
-##JAVA file to controll opertaions
-###Equation controller
+## JAVA file to controll opertaions
+### Equation controller
 ```java
 package com.test.springboot_html;
 
